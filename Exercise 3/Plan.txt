@@ -1,0 +1,16 @@
+D is both unfolded
+I is R15 folded and R16 unfolded
+N is both folded
+
+Adding a denaturant (e.g. urea) will promote unfolding
+The equilibrium rate constants for given concentrations were found.
+
+One interesting effect of this reaction is that if one of the species is coloured, a well-mixed
+reaction will produce timed colour changes. If the reactants are instead allowed to diffuse
+(say along a 1-d line), these colour changes will manifest themselves as spatially-resolved
+patterns which move over time.
+
+1. Show that these rate constants fit the kinetic model, as outlined in section 3.3.5
+2. Reproduce the dynamic spikes seen in Figure 3.4 by integrating the Oregonator’s kinetic equation
+3. Sketch the design of a program (and perhaps write one) allowing a spatially resolved simulation (due to diffusion)
+of the colour changes of the chemical species over time
