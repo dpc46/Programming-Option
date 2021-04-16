@@ -11,6 +11,8 @@ dt = sigma * dx**2 / nu #dt is defined using sigma ... more later!
 
 u = numpy.ones(nx)      #a numpy array with nx elements all equal to 1.
 u[int(.5 / dx):int(1 / dx + 1)] = 2  #setting u = 2 between 0.5 and 1 as per our I.C.s
+#this is the initial condition, which is just the top hat function
+#we could also have just set the first cell to be a value
 
 un = numpy.ones(nx) #our placeholder array, un, to advance the solution in time
 
