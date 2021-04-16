@@ -1,6 +1,5 @@
 import numpy                 #loading our favorite library
 from matplotlib import pyplot    #and the useful plotting library
-%matplotlib inline
 
 nx = 41
 dx = 2 / (nx - 1)
@@ -20,4 +19,5 @@ for n in range(nt):  #iterate through time
     for i in range(1, nx - 1):
         u[i] = un[i] + nu * dt / dx**2 * (un[i+1] - 2 * un[i] + un[i-1])
 
-pyplot.plot(numpy.linspace(0, 2, nx), u);
+pyplot.plot(numpy.linspace(0, 2, nx), u)
+pyplot.show()
