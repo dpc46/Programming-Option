@@ -9,12 +9,10 @@ sigma = .2 #sigma is a parameter, we'll learn more about it later
 dt = sigma * dx**2 / nu #dt is defined using sigma ... more later!
 
 
-u = numpy.ones(nx)      #a numpy array with nx elements all equal to 1.
-u[int(.5 / dx):int(1 / dx + 1)] = 2  #setting u = 2 between 0.5 and 1 as per our I.C.s
-#this is the initial condition, which is just the top hat function
-#we could also have just set the first cell to be a value
+u = numpy.zeros(nx)      #a numpy array with nx elements all equal to 1.
+u[0] = 1  #I.C. is [A] = 1 at x = 0
 
-un = numpy.ones(nx) #our placeholder array, un, to advance the solution in time
+un = numpy.zeros(nx) #our placeholder array, un, to advance the solution in time
 
 for n in range(nt):  #iterate through time
     un = u.copy() ##copy the existing values of u into un
