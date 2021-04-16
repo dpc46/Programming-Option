@@ -32,3 +32,13 @@ Kinetic Equations:
 d[D]/dt = -kf(R15)[D] + ku(R15)[I]
 d[I]/dt = kf(R15)[D] - ku(R15)[I] -kf(R16)[I] + ku(R16)[N]
 d[N]/dt = kf(R16)[I] - ku(R16)[N]
+
+For the time-evolution program:
+1. Define the set of points (e.g., 1D linspace)
+2. Define a function that:
+a. takes the time-step t, the initial reactant concentrations
+and the urea concentration as it's inputs
+b. Calculates the new concentrations due to folding/unfolding
+c. Calculates the new concentrations due to diffusion
+3. Define the plot parameters
+4. Animate the plot
